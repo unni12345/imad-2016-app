@@ -6,6 +6,10 @@ var app = express();
 app.use(morgan('combined'));
 
 
+app.get('/documentone', function (req, res) {
+  res.sendFile("document will be updated quickly");
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
