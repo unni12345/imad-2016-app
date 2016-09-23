@@ -19,6 +19,10 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+app.get('/ui/panda.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'hd-wallpaper-kung-fu-panda.jpg'));
+});
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname,'myprofile.html'));
 });
