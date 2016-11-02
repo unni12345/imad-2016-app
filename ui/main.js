@@ -12,7 +12,7 @@ submit.onclick= function() {
     //From now is shit
     
           for(i=0;i<comments.length;i++){
-           list +='<li>'+comments[i]+'</li>';
+           m.innerHTML='<li>'+comments[i]+'</li>';
           }
 
         console.log(list);
