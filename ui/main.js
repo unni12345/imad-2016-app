@@ -7,11 +7,12 @@ submit.onclick= function() {
     //make a request to the server
     //capture a list andrender it as a list
     //From now is shit
-    //for(  i=0; i< names.length();i=i+1){
-      //  list='<li>'+names[i]+'</li>';
+    for(  i=0; i< names.length();i=i+1){
+        list='<li>'+names[i]+'</li>';
         alert("something");
+    }
     
     
-//    var ul=document.getElememtById("commentList");
-   // ul.innerHTML=list;
+   var ul=document.getElememtById("commentList");
+   ul.innerHTML=list;
 };
