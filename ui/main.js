@@ -15,7 +15,7 @@ submit.onclick= function() {
            list='<li>'+comments[i]+'</li>';
           }
 
-        m.innerHTML=list;  
+        console.log(list);
       
       
 
