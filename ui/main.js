@@ -9,7 +9,7 @@ submit.onclick= function() {
     //From now is shit
    // for(  i=0; i< 4;i++){
    //     list='<li>'+names[i]+'</li>';
-     //   alert("something");
+        alert("something");
     document.getElementById("comment1").innerHTML="ok";
 
     };
