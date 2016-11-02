@@ -11,7 +11,7 @@ submit.onclick= function() {
     //capture a list andrender it as a list
     //From now is shit
     
-          n.innerHTML=comments[1];
+          n.innerHTML=comments[3];
           o.innerHTML=comments[2];
           m.innerHTML=comments[0];
 
