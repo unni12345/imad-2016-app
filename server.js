@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articleone={
-    tiltle:"Raj Krishnan V",
+    title:"Raj Krishnan V",
     content:`<h1 align='center'>I am Raj Krishnan V</h1>
 <p>I amstudying electrical engineering, but i am interested in computer science. It's a fast miving field and thus you need to learn many things and that too very fast. Be a <del>beginner</del>
 pro ....<br>
