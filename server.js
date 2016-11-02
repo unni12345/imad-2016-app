@@ -35,6 +35,9 @@ app.get('/', function (req, res) {
 app.get('/maddi', function (req, res) {
   res.sendFile(path.join(__dirname,'ui/madi.png'));
 });
+app.get('/kungfupanda',function(req,res){
+    res.sendFile(path.join(__dirname,'css1.html'));
+});
 
 
 app.get('/ui/style.css', function (req, res) {
