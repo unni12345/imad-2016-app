@@ -10,7 +10,7 @@ submit.onclick= function() {
     //From now is shit
     
       for(i;i<4;i++){
-          m.innerHTML=comments[i];
+          m.innerHTML="<li>"+comments[i]+"</li>";
 
           
       }
