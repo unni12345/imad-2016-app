@@ -35,10 +35,15 @@ app.get('/', function (req, res) {
 app.get('/maddi', function (req, res) {
   res.sendFile(path.join(__dirname,'ui/madi.png'));
 });
-app.get('/kungfupanda',function(req,res){
+app.get('/kungfupanda.html',function(req,res){
     res.sendFile(path.join(__dirname,'css1.html'));
 });
-
+app.get('/sigin.html',function(req,res){
+    res.sendFile(path.join(__dirname,'signin.html'));
+});
+app.get('/signup.html',function(req,res){
+    res.sendFile(path.join(__dirname,'signup.html'));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
