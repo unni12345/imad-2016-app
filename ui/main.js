@@ -12,10 +12,11 @@ submit.onclick= function() {
     //From now is shit
     
           for(i=0;i<comments.length;i++){
+           alert("looping");
            m.innerHTML='<li>'+comments[i]+'</li>';
           }
 
-        console.log(list);
+        
       
       
 
