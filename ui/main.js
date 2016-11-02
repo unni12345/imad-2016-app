@@ -1,5 +1,5 @@
 var comment=document.getElementById("comment").value;
-var submit=document.getElementById("commentSubmit").value;
+var submit=document.getElementById("commentSubmit");
 var names=["raj","arnab","allan","saurabh"];
 var i=0;
 var list='';
