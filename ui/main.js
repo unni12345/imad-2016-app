@@ -9,8 +9,12 @@ submit.onclick= function() {
     //capture a list andrender it as a list
     //From now is shit
     
+      for(i;i<4;i++){
+          m.innerHTML=comments[i];
+
+          
+      }
       
-      m.innerHTML=comments[0];
 
     };
     
