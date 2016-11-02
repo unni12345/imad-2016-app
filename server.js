@@ -42,7 +42,7 @@ app.get('/sigin.html',function(req,res){
     res.sendFile(path.join(__dirname,'signin.html'));
 });
 app.get('/signup.html',function(req,res){
-    res.sendFile(path.join(__dirname,'signup.html'));
+    res.sendFile(path.join(__dirname,'sigup.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
