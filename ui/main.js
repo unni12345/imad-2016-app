@@ -12,5 +12,6 @@ submit.onclick= function() {
         
     }
     
-    var ul=document.getElememtById("")
+    var ul=document.getElememtById("commentList");
+    ul.innerHTML=list;
 };
