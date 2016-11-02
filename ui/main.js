@@ -3,7 +3,7 @@ var submit=document.getElementById("commentSubmit");
 var comments=["Ok","wonderful","cool","good job"];
 var i=0;
 var list=" ";
-var m=document.getElementById("comment1");
+var m=document.getElementById("commentList");
 var n=document.getElementById("comment2");
 var o=document.getElementById("comment3");
 submit.onclick= function() {
@@ -11,9 +11,9 @@ submit.onclick= function() {
     //capture a list andrender it as a list
     //From now is shit
     
-          n.innerHTML=comments[3];
-          o.innerHTML=comments[2];
-          m.innerHTML=comments[0];
+          for(i=0;i<comments.length;i++){
+              m.innerHTML='<li>'+comments[i]+'</li>';
+          }
 
           
       
