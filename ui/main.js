@@ -11,10 +11,9 @@ submit.onclick= function() {
     //capture a list andrender it as a list
     //From now is shit
     
-          for(i=0;i<comments.length;i++){
-           alert("looping");
-           m.innerHTML='<li>'+comments[i]+'</li>';
-          }
+
+           m.innerHTML='<li>'+comments[0]+'</li>'+'<li>'+comments[1]+'</li>'+'<li>'+comments[2]+'</li>'+'<li>'+comments[3]+'</li>';
+          
 
         
       
