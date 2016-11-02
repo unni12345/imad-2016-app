@@ -10,7 +10,7 @@ submit.onclick= function() {
    // for(  i=0; i< 4;i++){
    //     list='<li>'+names[i]+'</li>';
         alert("something");
-    document.getElementById("comment1").innerHTML="ok";
+    
 
     };
     
