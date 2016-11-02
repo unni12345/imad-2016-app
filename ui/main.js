@@ -8,10 +8,11 @@ submit.onclick= function() {
     //make a request to the server
     //capture a list andrender it as a list
     //From now is shit
-   // for(  i=0; i< 4;i++){
-   //     list='<li>'+names[i]+'</li>';
-        alert("something");
-        m.innerHTML="woow";
+    for(  i=0; i< 4;i++){
+      list='<li>'+names[i]+'</li>';
+      alert("something");}
+      
+      m.innerHTML=list;
 
     };
     
