@@ -30,7 +30,7 @@ var htmlMade=function(data){
     return htmlTemplate;
 };
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname,'indexmain.html'));
 });
 app.get('/maddi', function (req, res) {
   res.sendFile(path.join(__dirname,'ui/madi.png'));
