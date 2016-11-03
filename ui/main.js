@@ -12,7 +12,7 @@ submit.onclick= function() {
     //From now is shit
     
           for(i=0;i<4;i++){
-              list='<li>'+comments[i]+'</li>';
+              list= list +'<li>'+comments[i]+'</li>';
           
               
           }
