@@ -65,6 +65,13 @@ app.get('/article-one', function (req, res) {
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname,'rajkv.html'));
 });
+var comments=[];
+app.get('/submit-name/:comment',function(req,res){
+    var comment=req.params.comment;
+     
+    comments.push(comment);
+    res.send(JSON.stringify(comments));//get the name fromthe request
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
