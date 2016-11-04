@@ -1,4 +1,4 @@
-var comment=document.getElementById("comment").value;
+
 var submit=document.getElementById("commentSubmit");
 var comments=["Ok","wonderful","cool","good job"];
 var i=0;
@@ -10,16 +10,26 @@ submit.onclick= function() {
         //capture a list andrender it as a list
     //From now is shit
 
-          for(i=0;i<4;i++){
-              list= list +'<li>'+realComment+'</li>';
+        var requet= new XMLHttpRequest();
+        if(request.readyState=== XMLHttpRequest.DONE){
+            //CAPTURWE THE NAMES
+            if(request.STATUS===200){
+                var comments=comment.responseText;
+                for(i=0;i<names.length;i++){
+                    list=list+'<li>'+comments[i]+'</li>';
+                }
+                
+            }
+        }
           
               
-          }
-           m.innerHTML=list;
+          };
+           
           
-
+    var comment=document.getElementById("comment").value;
         
-      
+     request.open('GET','http://unni12345.imad.hasura-app.io/submit-comment?comment='+comment,true);
+     request.send(null);
       
 
     };
