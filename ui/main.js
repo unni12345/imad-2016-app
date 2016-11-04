@@ -1,6 +1,6 @@
 
 var submit=document.getElementById("commentSubmit");
-var comments=["Ok","wonderful","cool","good job"];
+var comments=[];
 var i=0;
 
 var realComment=String(comment);
@@ -8,7 +8,10 @@ submit.onclick= function() {
     //make a request to the server
         //capture a list andrender it as a list
     //From now is shit
+     
      var comment=document.getElementById("comment").value;
+     comments.push(comment);
+     alert(comment);
      var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
