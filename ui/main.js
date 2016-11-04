@@ -37,7 +37,6 @@ submit.onclick= function() {
      request.open('GET','http://unni12345.imad.hasura-app.io/submit-comment?comment='+comment,true);
      request.send(null);
       
-
     };
     
     
