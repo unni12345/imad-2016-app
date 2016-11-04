@@ -19,6 +19,8 @@ submit.onclick= function() {
             //CAPTURWE THE NAMES
             if(request.STATUS===200){
                 var comments=comment.responseText;
+                comments=JSON.parse(comments);
+                var list= '';
                 for(i=0;i<names.length;i++){
                     list=list+'<li>'+comments[i]+'</li>';
                 }
