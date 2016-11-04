@@ -38,7 +38,7 @@ var htmlMade=function(data){
     return htmlTemplate;
 };
 app.get('/articles/:artcleName', function (req, res) {
- pool.query('select * from article where id='+req.params.artcleName,function(err,result){
+ pool.query("select * from article where id='"+req.params.artcleName+"'",function(err,result){
      if(err){
          res.status(500).send(err.toString());
          
