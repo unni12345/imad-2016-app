@@ -8,12 +8,12 @@ submit.onclick= function() {
     //make a request to the server
         //capture a list andrender it as a list
     //From now is shit
-      alert("thodangi");
+     
         var request= new XMLHttpRequest();
         
         request.onreadystatechange=function(){
             
-       
+        alert("thodangi");
         if(request.readyState=== XMLHttpRequest.DONE){
             //CAPTURWE THE NAMES
             if(request.STATUS===200){
