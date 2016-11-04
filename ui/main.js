@@ -15,7 +15,7 @@ xhttp.onreadystatechange = function() {
        // Typical action to be performed when the document is ready:
     
     }
-};f
+};
 xhttp.open("GET", "http://unni12345.imad.hasura-app.io/submit-comment?comment=wow", true);
 xhttp.send();
  
