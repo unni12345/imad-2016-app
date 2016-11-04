@@ -66,7 +66,7 @@ app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname,'rajkv.html'));
 });
 var comments=[];
-app.get('/submit-name',function(req,res){
+app.get('/submit-comment',function(req,res){
     var comment=req.query.comment;
      
     comments.push(comment);
