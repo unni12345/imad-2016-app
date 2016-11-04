@@ -8,7 +8,7 @@ submit.onclick= function() {
     //make a request to the server
         //capture a list andrender it as a list
     //From now is shit
-     
+     var comment=document.getElementById("comment").value;
      var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -16,7 +16,7 @@ xhttp.onreadystatechange = function() {
     
     }
 };
-xhttp.open("GET", "http://unni12345.imad.hasura-app.io/submit-comment?comment=wow", true);
+xhttp.open("GET", "http://unni12345.imad.hasura-app.io/submit-comment?comment="+comment, true);
 xhttp.send();
  
     };
