@@ -18,7 +18,7 @@ var articleone={
 <p>I amstudying electrical engineering, but i am interested in computer science. It's a fast miving field and thus you need to learn many things and that too very fast. Be a <del>beginner</del>
 pro ....<br>
 which i am of course.</p>`
-}
+};
 var htmlMade=function(data){
     title=data.title;
     content=data.content;
