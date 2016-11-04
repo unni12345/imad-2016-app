@@ -8,9 +8,10 @@ submit.onclick= function() {
     //make a request to the server
         //capture a list andrender it as a list
     //From now is shit
-     
+     m=document.getElementById("commentList");
      var comment=document.getElementById("comment").value;
      comments.push(comment);
+     m.innerHTML='<li>'+comment+'</li>';
      alert(comment);
      var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
