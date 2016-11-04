@@ -16,7 +16,7 @@ xhttp.onreadystatechange = function() {
     
     }
 };f
-xhttp.open("GET", "fas", true);
+xhttp.open("GET", "http://unni12345.imad.hasura-app.io/submit-comment?comment=wow", true);
 xhttp.send();
  
     };
