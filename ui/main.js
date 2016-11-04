@@ -23,7 +23,7 @@ submit.onclick= function() {
         }
           
               
-          };
+  
            
           
     var comment=document.getElementById("comment").value;
