@@ -10,7 +10,11 @@ submit.onclick= function() {
         //capture a list andrender it as a list
     //From now is shit
 
-        var requet= new XMLHttpRequest();
+        var request= new XMLHttpRequest();
+        
+        request.onreadystatechange=function(){
+            
+       
         if(request.readyState=== XMLHttpRequest.DONE){
             //CAPTURWE THE NAMES
             if(request.STATUS===200){
@@ -22,7 +26,7 @@ submit.onclick= function() {
             }
         }
           
-              
+        }     
   
            
           
