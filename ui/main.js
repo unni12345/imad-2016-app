@@ -11,7 +11,7 @@ submit.onclick= function() {
      m=document.getElementById("commentList");
      var comment=document.getElementById("comment").value;
      comments.push(comment);
-     m.innerHTML='<li>'+comment+'</li>';
+     m.innerHTML=m.innerHTML+'<li>'+comment+'</li>';
      alert(comment);
      var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
