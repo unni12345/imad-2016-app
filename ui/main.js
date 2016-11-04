@@ -25,7 +25,7 @@ submit.onclick= function() {
                 }
                 var m=document.getElementById("commentList");
                 m.innerHTML=list;
-                alrt("nadakunnu");
+                alert("nadakunnu");
                 
             }
         }
