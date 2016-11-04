@@ -9,7 +9,18 @@ submit.onclick= function() {
         //capture a list andrender it as a list
     //From now is shit
      
-        var request= new XMLHttpRequest();
+     var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+    
+    }
+};f
+xhttp.open("GET", "fas", true);
+xhttp.send();
+ 
+    };
+    /*       var request= new XMLHttpRequest();
         
         request.onreadystatechange=function(){
             
@@ -39,8 +50,7 @@ submit.onclick= function() {
       alert(list);  
      request.open('GET','http://unni12345.imad.hasura-app.io/submit-comment?comment='+comment,true);
      request.send(null);
-      
-    };
+      */
     
     
    
