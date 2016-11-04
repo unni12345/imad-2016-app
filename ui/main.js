@@ -26,7 +26,7 @@ submit.onclick= function() {
             }
         }
           
-        }     
+        };
   
            
           
