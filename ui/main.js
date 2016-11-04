@@ -17,6 +17,7 @@ submit.onclick= function() {
         if(request.readyState=== XMLHttpRequest.DONE){
             //CAPTURWE THE NAMES
             if(request.STATUS===200){
+                alert("keri");
                 var comments=comment.responseText;
                 comments=JSON.parse(comments);
                 var list= '';
@@ -25,7 +26,7 @@ submit.onclick= function() {
                 }
                 var m=document.getElementById("commentList");
                 m.innerHTML=list;
-                alert("nadakunnu");
+               
                 
             }
         }
