@@ -10,6 +10,7 @@ var config={
     password:process.env.DB_PASSWORD
 };
 var pool=new Pool(config);
+var crypto=require("crypto");
 var app = express();
 app.use(morgan('combined'));
 var articleone={
