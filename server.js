@@ -79,21 +79,7 @@ app.get('/sigin.html',function(req,res){
     res.sendFile(path.join(__dirname,'signin.html'));
 });
 
-app.post('/signup.html',function(req,res){
-    var userName=req.body.username;
-    var password=req.body.password;
-    res.sendFile(path.join(__dirname,'sigup.html'));
-    var salt=crypto.randomBytes(128).toString('hex');
-    var dbString=hash(password,salt);
-    pool.query('insert into "user"(username, password) values($1,$2)', [username,dbString],function(err,result){
-       if(err){
-           res.status(500).send(err.toStrig());
-       } else{
-           res.send('user succesfully logged ');
-       }
-       
-    });
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
