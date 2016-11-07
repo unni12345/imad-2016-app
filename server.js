@@ -85,12 +85,13 @@ app.post('/signup.html',function(req,res){
     res.sendFile(path.join(__dirname,'sigup.html'));
     var salt=crypto.randomBytes(128).toString('hex');
     var dbString=hash(password,salt);
-    POOL.QUERY('insert into "user"(username, password) values($1,$2)', [username,dbString],function(err,result){
+    pool.query('insert into "user"(username, password) values($1,$2)', [username,dbString],function(err,result){
        if(err){
            res.status(500).send(err.toStrig());
        } else{
            res.send('user succesfully logged ');
        }
+       
     });
 });
 
