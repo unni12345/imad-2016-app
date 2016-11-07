@@ -84,7 +84,7 @@ app.get('/hash/:input', function(req, res) {
    res.send(hashedString);
 });
 
-app.post('/create-user', function (req, res) {
+app.post('/signup', function (req, res) {
    // username, password
    // {"username": "tanmai", "password": "password"}
    // JSON
@@ -101,7 +101,7 @@ app.post('/create-user', function (req, res) {
    });
 });
 
-app.post('/sigin', function (req, res) {
+app.post('/signin', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
    
