@@ -62,18 +62,23 @@ app.get('/articles/:artcleName', function (req, res) {
      }
  });
 });
+ 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'indexmain.html'));
-});
+}); 
+
 app.get('/maddi', function (req, res) {
   res.sendFile(path.join(__dirname,'ui/madi.png'));
 });
+
 app.get('/kungfupanda.html',function(req,res){
     res.sendFile(path.join(__dirname,'css1.html'));
 });
+
 app.get('/sigin.html',function(req,res){
     res.sendFile(path.join(__dirname,'signin.html'));
 });
+
 app.post('/signup.html',function(req,res){
     var userName=req.body.username;
     var password=req.body.password;
@@ -92,6 +97,7 @@ app.post('/signup.html',function(req,res){
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
