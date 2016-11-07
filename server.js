@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool=require('pg').Pool;
+var bodyParser=require('body-parser'); 
 var config={
     user:'unni12345',
     database:'unni12345',
@@ -13,6 +14,7 @@ var pool=new Pool(config);
 var crypto=require("crypto");
 var app = express();
 app.use(morgan('combined'));
+app.use(bodyParser.json)
 var articleone={
     title:"Raj Krishnan V",
     content:`<h1 align='center'>I am Raj Krishnan V</h1>
@@ -72,8 +74,19 @@ app.get('/kungfupanda.html',function(req,res){
 app.get('/sigin.html',function(req,res){
     res.sendFile(path.join(__dirname,'signin.html'));
 });
-app.get('/signup.html',function(req,res){
+app.post('/signup.html',function(req,res){
+    var userName=req.body.username;
+    var password=req.body.password;
     res.sendFile(path.join(__dirname,'sigup.html'));
+    var salt=crypto.randomBytes(128).toString('hex');
+    var dbString=hash(password,salt);
+    POOL.QUERY('insert into "user"(username, password) values($1,$2)', [username,dbString],function(err,result){
+       if(err){
+           res.status(500).send(err.toStrig());
+       } else{
+           res.send('user succesfully logged ');
+       }
+    });
 });
 
 app.get('/ui/style.css', function (req, res) {
