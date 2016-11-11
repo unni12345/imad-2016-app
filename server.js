@@ -165,6 +165,7 @@ app.get('/get-articles', function (req, res) {
       } else {
           res.send(JSON.stringify(result.rows));
       }
+      console.log("entered");
    });
 });
 
