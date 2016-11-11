@@ -39,7 +39,7 @@ function createTemplate (data) {
       </head> 
       <body background=${imageUrl}>
           <div class="container">
-              <div>
+              <div id="home">
                   <a href="/">Home</a>
               </div>
               <hr/>
