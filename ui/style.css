@@ -1,22 +1,72 @@
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    background-image: url("http://vignette1.wikia.nocookie.net/kungfupanda/images/7/73/KFP3-promo-po4.jpg/revision/latest/scale-to-width-down/270?cb=20150726165358");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-right: 400px;
+    background-attachment: fixed;
+    
 }
 
-.center {
+h1 {padding-left: 250px;
+    position: relative;
+    color: aqua;
     text-align: center;
+    text-decoration-color: bisque;
+    font-weight: 200;
 }
 
-.text-big {
-    font-size: 300%;
+p { text-align: center;
+    font-family: verdana;
+    font-size: 20px;
 }
 
-.bold {
-    font-weight: bold;
+div {
+  
+    height :500px;
+    width: 75%;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 250px;
+    background-color: gold;
+    padding: 25px;
+    overflow: scroll;
+    color: black;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+    
+      
+ul.a {
+    list-style-type: circle;
 }
 
-.img-medium {
-    height: 200px;
+ul.b {
+    list-style-type: square;
 }
 
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+    input[type=text]{
+        width: 33%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+
+    }
