@@ -27,7 +27,7 @@ function createTemplate (data) {
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
-    
+    var imageUrl=data.imageUrl;
     var htmlTemplate = `
     <html>
       <head>
@@ -37,7 +37,7 @@ function createTemplate (data) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link href="/ui/style.css" rel="stylesheet" />
       </head> 
-      <body id="mainBody">
+      <body background=${imageUrl}>
           <div class="container">
               <div>
                   <a href="/">Home</a>
