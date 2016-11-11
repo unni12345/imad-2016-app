@@ -165,7 +165,6 @@ app.get('/get-articles', function (req, res) {
       } else {
           res.send(JSON.stringify(result.rows));
       }
-      console.log("entered");
    });
 });
 
@@ -225,6 +224,7 @@ app.get('/articles/:articleName', function (req, res) {
             res.send(createTemplate(articleData));
         }
     }
+    console.log("entered");
   });
 });
 
