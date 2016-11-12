@@ -20,7 +20,8 @@ request.onreadystatechange = function() {
 };
 
 var username=document.getElementById("username").value;
-var password=document.getElementById("password").value;
+var passworde=document.getElementById("password");
+var password=passworde.value;
 console.log("username");
 console.log("password");
 request.setRequestHeader('Content-Type','application/jason');
