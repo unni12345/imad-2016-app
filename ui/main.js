@@ -25,8 +25,8 @@ console.log("username");
 console.log("password");
 request.setRequestHeader('Content-Type','application/jason');
 
-xhttp.open("POST", "http://unni12345.imad.hasura-app.io/login", true);
-xhttp.send(JSON.stringify({username:username,password:password}));
+request.open("POST", "http://unni12345.imad.hasura-app.io/login", true);
+request.send(JSON.stringify({username:username,password:password}));
  
     };
     /*       var request= new XMLHttpRequest();
