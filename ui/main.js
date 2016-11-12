@@ -11,7 +11,7 @@ xhttp.onreadystatechange = function() {
      alert("logged in successfully");// Typical action to be performed when the document is ready:
     
     }else if (this.status==403){
-        alert("username orpassword is incorrect");
+        alert("username or password is incorrect");
     }else if(this.status==500){
         alert("Something happened at the server");
     }
