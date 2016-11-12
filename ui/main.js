@@ -12,10 +12,10 @@ xhttp.onreadystatechange = function() {
     
     }else if (this.status==403){
         alert("username orpassword is incorrect");
-    }else (this.status==500){
+    }else (this.status==500)
         alert("Something happened at the server");
         
-    }
+    
 };
 
 var username=document.getElementById("username").value;
