@@ -4,8 +4,8 @@ var submit=document.getElementById("submit");
 submit.onclick= function() {
     //make a request to the server
    
-     var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
+     var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
      console.log("user loged in");
      alert("logged in successfully");// Typical action to be performed when the document is ready:
