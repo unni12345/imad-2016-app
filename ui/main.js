@@ -24,9 +24,11 @@ var passworde=document.getElementById("password");
 var password=passworde.value;
 console.log("username");
 console.log("password");
-request.setRequestHeader('Content-Type','application/jason');
 
 request.open("POST", "http://unni12345.imad.hasura-app.io/login", true);
+request.setRequestHeader('Content-Type','application/jason');
+
+
 request.send(JSON.stringify({username:username,password:password}));
  
     };
