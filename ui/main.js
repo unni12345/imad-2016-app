@@ -1,5 +1,5 @@
 
-var submit=document.getElementById("submit");
+var submit=document.getElementById("submit_btn");
 
 submit.onclick= function() {
     //make a request to the server
