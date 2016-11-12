@@ -1,9 +1,6 @@
 
-var submit=document.getElementById("commentSubmit");
-var comments=[];
-var i=0;
+var submit=document.getElementById("submit");
 
-var realComment=String(comment);
 submit.onclick= function() {
     //make a request to the server
    
