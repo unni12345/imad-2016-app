@@ -6,7 +6,7 @@ submit.onclick= function() {
    alert("clicked");
      var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if ( this.status == 200) {
      console.log("user loged in");
      alert("logged in successfully");// Typical action to be performed when the document is ready:
     
